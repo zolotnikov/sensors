@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "./onesoil.css";
+import FullChart from "./Screens/FullChart";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./Screens/Home";
+import With6sensors from "./Screens/With6sensors";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    render() {
+        return (
+            <Router>
+                <div>
+                    <Route path="/" exact component={Home} />
+                    <Route path="/fullchart" exact component={FullChart} />
+                    <Route
+                        path="/with6sensors"
+                        exact
+                        component={With6sensors}
+                    />
+                </div>
+            </Router>
+        );
+    }
 }
 
 export default App;

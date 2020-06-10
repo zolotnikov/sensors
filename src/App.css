@@ -1,38 +1,293 @@
 .App {
-  text-align: center;
+    text-align: center;
+    display: flex;
+    width: 1200px;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns: 200px 300px auto;
+    background: #eeeff2;
+    height: 100vh;
+}
+
+.mainNavigation {
+    background: #eeeff2;
+}
+
+.secondNavigation {
+    display: grid;
+    grid-template-rows: 50px auto;
+    background: #ffffff;
+    box-shadow: -2px 0 20px 0 rgba(0, 0, 0, 0.07),
+        0 0 0 0 rgba(165, 178, 188, 0.3),
+        inset -1px 0 0 0 rgba(214, 220, 225, 0.59);
+    border-radius: 8px 0 0 8px;
+}
+
+.navHeader {
+    padding: 0 22px;
+    display: grid;
+    grid-template-columns: 20px auto 20px;
+    align-items: center;
+    border-bottom: 1px solid #e4e7ea;
+    font-family: GraphikLCWeb-Medium;
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    line-height: 22px;
+}
+
+.navBody {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 62px auto;
+}
+
+.charts {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    grid-template-areas: "header header" "time time";
+    background: #fff;
+    justify-content: center;
+    padding: 20px;
+}
+
+.fullChart {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 50px;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    background: #fff;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.fullChartHeader {
+    display: grid;
+    grid-template-columns: 42px auto;
+    grid-template-areas: "back time";
+    column-gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px;
+    /* margin-bottom: 88px; */
+}
+
+.chartsHeader {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-area: header;
+}
+
+.bigTitle {
+    font-family: GraphikLCWeb-Bold;
+    font-size: 36px;
+    color: #222222;
+    line-height: 45px;
+}
+
+.time {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    column-gap: 20px;
+    grid-area: time;
+    margin-bottom: 20px;
+}
+
+.back {
+    display: grid;
+    background: #e9ecef;
+    border-radius: 21px;
+    height: 42px;
+    grid-area: back;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.oneChart {
+    margin: 0px auto;
+    padding: 20px 0px 40px;
+    border-radius: 16px;
+}
+
+/* .oneChart:hover {
+    background: #f6f7f9;
+} */
+
+.oneChart:hover .button {
+    opacity: 1;
+}
+
+.chartHeader {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.labelValue {
+    display: grid;
+    grid-template-rows: auto auto;
+    column-gap: 2px;
+    text-align: right;
+    margin-left: 10px;
+}
+
+.label {
+    font-family: GraphikLCWeb-Regular;
+    font-size: 12px;
+    color: #a5b2bc;
+    text-align: right;
+    line-height: 16px;
+}
+
+.titleButton {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    column-gap: 4px;
+    cursor: pointer;
+    opacity: 0;
+    /* transition: all 0.2s cubic-bezier(0.6, 0.04, 0.98, 0.34); */
+}
+
+a {
+    text-decoration: none;
+    padding-top: 2px;
+    font-family: GraphikLCWeb-Medium;
+    font-size: 14px;
+    color: #007aff;
+    line-height: 20px;
+}
+
+.title {
+    font-family: GraphikLCWeb-Medium;
+    font-size: 20px;
+    color: #222222;
+    line-height: 22px;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    margin-top: -16px;
+}
+
+.values6 {
+    display: flex;
+    /* grid-template-columns: auto auto;
+    grid-column-gap: 10px; */
+    margin-top: -16px;
+}
+.value {
+    font-family: GraphikLCWeb-Bold;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.chartBG {
+    /* height: 140px; */
+    background: #f5f7f9;
+    border-radius: 6px;
+}
+
+.segmentContlorBody {
+    display: table;
+    width: fit-content;
+    background: #e9ecef;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.segmentConrolItem {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.segmentConrolInnerItem {
+    display: block;
+    border-width: 0;
+    transition: color 0.1s, background-color 0.1s;
+    white-space: nowrap;
+    min-height: 34px;
+    padding: 0 13px;
+    font-family: GraphikLCWeb-Regular;
+    font-size: 16px;
+    color: #222222;
+    line-height: 22px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.segmentConrolInnerItemActive {
+    display: block;
+    border-width: 0;
+    background-color: #fff;
+    transition: color 0.1s, background-color 0.1s;
+    white-space: nowrap;
+    min-height: 34px;
+    padding: 0 13px;
+    font-family: GraphikLCWeb-Regular;
+    font-size: 16px;
+    color: #222222;
+    line-height: 22px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.segmentConrolInnerItem:hover {
+    color: #222222;
+    border-radius: 6px;
+    background-color: #d5dbdf;
 }
