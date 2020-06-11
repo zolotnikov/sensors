@@ -45,126 +45,7 @@ function FullChart() {
                     </a>
                     Датчики
                 </div>
-                <div className="navBody">
-                    {/* <div class="form-group">
-                        <div class="form-group">
-                            <label data-legend="color-1" class="form-checkbox">
-                                <input
-                                    class="form-checkbox__chk"
-                                    type="checkbox"
-                                    defaultChecked={true}
-                                />
-                                <span class="form-checkbox__el"></span>
-                                <span class="form-checkbox__value">
-                                    Температура воздуха
-                                </span>
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label data-legend="color-2" class="form-checkbox">
-                                <input
-                                    class="form-checkbox__chk"
-                                    type="checkbox"
-                                    defaultChecked={true}
-                                />
-                                <span class="form-checkbox__el"></span>
-                                <span class="form-checkbox__value">
-                                    Влажность воздуха
-                                </span>
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label
-                                data-legend="color-3.1"
-                                class="form-checkbox"
-                            >
-                                <input
-                                    class="form-checkbox__chk"
-                                    type="checkbox"
-                                    defaultChecked={true}
-                                />
-                                <span class="form-checkbox__el"></span>
-                                <span class="form-checkbox__value">
-                                    Температура почвы 5см
-                                </span>
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label
-                                data-legend="color-3.2"
-                                class="form-checkbox"
-                            >
-                                <input
-                                    class="form-checkbox__chk"
-                                    type="checkbox"
-                                    defaultChecked={true}
-                                />
-                                <span class="form-checkbox__el"></span>
-                                <span class="form-checkbox__value">
-                                    Температура почвы 20см
-                                </span>
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label
-                                data-legend="color-4.1"
-                                class="form-checkbox"
-                            >
-                                <input
-                                    class="form-checkbox__chk"
-                                    type="checkbox"
-                                    defaultChecked={true}
-                                />
-                                <span class="form-checkbox__el"></span>
-                                <span class="form-checkbox__value">
-                                    Влажность почвы 5см
-                                </span>
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label
-                                data-legend="color-4.2"
-                                class="form-checkbox"
-                            >
-                                <input
-                                    class="form-checkbox__chk"
-                                    type="checkbox"
-                                    defaultChecked={true}
-                                />
-                                <span class="form-checkbox__el"></span>
-                                <span class="form-checkbox__value">
-                                    Влажность почвы 20см
-                                </span>
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label data-legend="color-5" class="form-checkbox">
-                                <input
-                                    class="form-checkbox__chk"
-                                    type="checkbox"
-                                    defaultChecked={true}
-                                />
-                                <span class="form-checkbox__el"></span>
-                                <span class="form-checkbox__value">
-                                    Освещенность
-                                </span>
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label data-legend="color-6" class="form-checkbox">
-                                <input
-                                    class="form-checkbox__chk"
-                                    type="checkbox"
-                                    defaultChecked={true}
-                                />
-                                <span class="form-checkbox__el"></span>
-                                <span class="form-checkbox__value">
-                                    Заряд батареи
-                                </span>
-                            </label>
-                        </div>
-                    </div> */}
-                </div>
+                <div className="navBody"></div>
             </div>
             <div className="fullChart">
                 <div className="fullChartHeader">
@@ -174,34 +55,34 @@ function FullChart() {
                         </a>
                     </div>
                     <div className="time">
-                        <div class="segmentContlorBody">
-                            <div class="segmentConrolItem">
+                        <div className="segmentContlorBody">
+                            <div className="segmentConrolItem">
                                 <button
-                                    class="segmentConrolInnerItem"
+                                    className="segmentConrolInnerItem"
                                     type="button"
                                 >
                                     24 часа
                                 </button>
                             </div>
-                            <div class="segmentConrolItem">
+                            <div className="segmentConrolItem">
                                 <button
-                                    class="segmentConrolInnerItem"
+                                    className="segmentConrolInnerItem"
                                     type="button"
                                 >
                                     2 дня
                                 </button>
                             </div>
-                            <div class="segmentConrolItem">
+                            <div className="segmentConrolItem">
                                 <button
-                                    class="segmentConrolInnerItemActive"
+                                    className="segmentConrolInnerItemActive"
                                     type="button"
                                 >
                                     7 дней
                                 </button>
                             </div>
-                            <div class="segmentConrolItem">
+                            <div className="segmentConrolItem">
                                 <button
-                                    class="segmentConrolInnerItem"
+                                    className="segmentConrolInnerItem"
                                     type="button"
                                 >
                                     30 дней
@@ -209,7 +90,7 @@ function FullChart() {
                             </div>
                         </div>
                         <div
-                            class="form-group"
+                            className="form-group"
                             style={{
                                 display: "grid",
                                 gridTemplateColumns: "auto auto auto",
@@ -218,20 +99,20 @@ function FullChart() {
                                 marginBottom: 0
                             }}
                         >
-                            <div class="form-select">
-                                <div class="form-select__ico">
+                            <div className="form-select">
+                                <div className="form-select__ico">
                                     <Calendar />
                                 </div>
-                                <div class="form-select__value">
+                                <div className="form-select__value">
                                     19 сент 2020
                                 </div>
                             </div>
                             —
-                            <div class="form-select">
-                                <div class="form-select__ico">
+                            <div className="form-select">
+                                <div className="form-select__ico">
                                     <Calendar />
                                 </div>
-                                <div class="form-select__value">
+                                <div className="form-select__value">
                                     26 сент 2020
                                 </div>
                             </div>

@@ -44,14 +44,22 @@ function Chart1(props) {
         >
             <div className="chartHeader">
                 <div className="titleButton">
-                    <div className="title">{props.name}</div>
+                    <div className="title" style={{ fontSize: props.fontSize }}>
+                        {props.name}
+                    </div>
                 </div>
                 {isHover ? (
                     <div className="button">
                         <Expand /> <a href="./fullchart">Открыть</a>
                     </div>
                 ) : (
-                    <div className="value" style={{ color: props.color1 }}>
+                    <div
+                        className="value"
+                        style={{
+                            color: props.color1,
+                            fontSize: props.fontSize
+                        }}
+                    >
                         {Math.round(props.data[props.data.length - 1].y)}
                         {props.unit}
                     </div>

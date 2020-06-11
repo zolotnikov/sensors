@@ -60,34 +60,34 @@ class Home extends React.Component {
                         <div className="bigTitle"> Sensor 3</div>
                     </div>
                     <div className="time">
-                        <div class="segmentContlorBody">
-                            <div class="segmentConrolItem">
+                        <div className="segmentContlorBody">
+                            <div className="segmentConrolItem">
                                 <button
-                                    class="segmentConrolInnerItem"
+                                    className="segmentConrolInnerItem"
                                     type="button"
                                 >
                                     24 часа
                                 </button>
                             </div>
-                            <div class="segmentConrolItem">
+                            <div className="segmentConrolItem">
                                 <button
-                                    class="segmentConrolInnerItem"
+                                    className="segmentConrolInnerItem"
                                     type="button"
                                 >
                                     2 дня
                                 </button>
                             </div>
-                            <div class="segmentConrolItem">
+                            <div className="segmentConrolItem">
                                 <button
-                                    class="segmentConrolInnerItemActive"
+                                    className="segmentConrolInnerItemActive"
                                     type="button"
                                 >
                                     7 дней
                                 </button>
                             </div>
-                            <div class="segmentConrolItem">
+                            <div className="segmentConrolItem">
                                 <button
-                                    class="segmentConrolInnerItem"
+                                    className="segmentConrolInnerItem"
                                     type="button"
                                 >
                                     30 дней
@@ -95,7 +95,7 @@ class Home extends React.Component {
                             </div>
                         </div>
                         <div
-                            class="form-group"
+                            className="form-group"
                             style={{
                                 display: "grid",
                                 gridTemplateColumns: "auto auto auto",
@@ -104,20 +104,20 @@ class Home extends React.Component {
                                 marginBottom: 0
                             }}
                         >
-                            <div class="form-select">
-                                <div class="form-select__ico">
+                            <div className="form-select">
+                                <div className="form-select__ico">
                                     <Calendar />
                                 </div>
-                                <div class="form-select__value">
+                                <div className="form-select__value">
                                     19 сент 2020
                                 </div>
                             </div>
                             —
-                            <div class="form-select">
-                                <div class="form-select__ico">
+                            <div className="form-select">
+                                <div className="form-select__ico">
                                     <Calendar />
                                 </div>
-                                <div class="form-select__value">
+                                <div className="form-select__value">
                                     26 сент 2020
                                 </div>
                             </div>
@@ -142,7 +142,7 @@ class Home extends React.Component {
                         data1={temp}
                         data2={temp_secondary}
                         color1="#27AE60"
-                        color2="#FF3B30"
+                        color2="#6337FF"
                         unit="°"
                         minXDomain="2020-05-28T00:20:51"
                     />
@@ -151,7 +151,7 @@ class Home extends React.Component {
                         data1={moisture}
                         data2={moisture_secondary}
                         color1="#27AE60"
-                        color2="#FF3B30"
+                        color2="#6337FF"
                         unit="%"
                         minYDomain={0}
                         minXDomain="2020-05-28T00:20:51"

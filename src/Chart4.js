@@ -44,7 +44,9 @@ function Chart4(props) {
         >
             <div className="chartHeader">
                 <div className="titleButton">
-                    <div className="title">{props.name}</div>
+                    <div className="title" style={{ fontSize: props.fontSize }}>
+                        {props.name}
+                    </div>
                 </div>
                 {isHover ? (
                     <div className="button">
@@ -56,7 +58,10 @@ function Chart4(props) {
                             <div className="label">80см</div>
                             <div
                                 className="value"
-                                style={{ color: props.color6 }}
+                                style={{
+                                    color: props.color6,
+                                    fontSize: props.fontSize
+                                }}
                             >
                                 {props.data5[props.data6.length - 1].y > 0
                                     ? Math.round(
@@ -70,7 +75,10 @@ function Chart4(props) {
                             <div className="label">65см</div>
                             <div
                                 className="value"
-                                style={{ color: props.color5 }}
+                                style={{
+                                    color: props.color5,
+                                    fontSize: props.fontSize
+                                }}
                             >
                                 {props.data4[props.data6.length - 1].y > 0
                                     ? Math.round(
@@ -84,7 +92,10 @@ function Chart4(props) {
                             <div className="label">50см</div>
                             <div
                                 className="value"
-                                style={{ color: props.color4 }}
+                                style={{
+                                    color: props.color4,
+                                    fontSize: props.fontSize
+                                }}
                             >
                                 {props.data3[props.data6.length - 1].y > 0
                                     ? Math.round(
@@ -98,7 +109,10 @@ function Chart4(props) {
                             <div className="label">35см</div>
                             <div
                                 className="value"
-                                style={{ color: props.color3 }}
+                                style={{
+                                    color: props.color3,
+                                    fontSize: props.fontSize
+                                }}
                             >
                                 {props.data2[props.data6.length - 1].y > 0
                                     ? Math.round(
@@ -112,7 +126,10 @@ function Chart4(props) {
                             <div className="label">20см</div>
                             <div
                                 className="value"
-                                style={{ color: props.color2 }}
+                                style={{
+                                    color: props.color2,
+                                    fontSize: props.fontSize
+                                }}
                             >
                                 {props.data1[props.data6.length - 1].y > 0
                                     ? Math.round(
@@ -126,7 +143,10 @@ function Chart4(props) {
                             <div className="label">5см</div>
                             <div
                                 className="value"
-                                style={{ color: props.color1 }}
+                                style={{
+                                    color: props.color1,
+                                    fontSize: props.fontSize
+                                }}
                             >
                                 {Math.round(
                                     props.data1[props.data1.length - 1].y
